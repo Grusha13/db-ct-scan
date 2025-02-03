@@ -1,0 +1,120 @@
+$font: "Public Sans", serif;
+$font-light: 300;
+$font-regular: 400;
+$font-medium: 500;
+$font-semibold: 600;
+$font-bold: 700;
+$font-extrabold: 800;
+$font-black: 900;
+
+$primary-color: #0A6E73;
+$secondary-color:   #C21935;
+$light-green:  #0F9CA3;
+$dark: #191919;
+$text-color: #666666;
+$dark-title: #616161;
+$white: #ffffff;
+$grey-bg: #f5f5f5;
+$grey: #b1b1b1;
+$p-color: #333333;
+$yellow: #FFDE00;
+
+@mixin form{
+    background-color: $white;
+    padding: 20px;
+    margin: 5px 0;
+    border-radius: 12px;
+
+    .form-group{
+        position: relative;
+    }
+
+    label{
+        font-size: 12px;
+        font-weight: $font-regular;
+        text-transform: uppercase;
+        transform: translateY(40px);
+        transition: all 0.4s;
+        cursor: text;
+        z-index: -1;
+        &.active{
+            transform: translateY(10px);
+            font-size: 10px;
+        }
+        &.fontSwitch{
+            font-weight: $font-bold;
+        }
+    }
+
+     input, select, textarea{
+        position: relative;
+        &:not([type="submit"]){
+            background: none;
+            outline: none;
+            border: none;
+            display: block;
+            padding: 10px 0;
+            width: 100%;
+            border-bottom: 1px solid #eee;
+            color: #444;
+            font-size: 15px;
+            z-index: 1;
+            transition: border-color 0.3s;
+            &:focus {
+                border-bottom: 1px solid $secondary-color;
+            }
+        }
+     }
+
+    .hasError{
+        border-color: $secondary-color;
+        input{
+            border-bottom: 1px solid $secondary-color;
+        }
+    }
+     
+     span.error{
+        color: $secondary-color;
+        font-size: 12px;
+        position: absolute;
+        bottom: -20px;
+        right: 0;
+        display: none;
+        &.show {
+            display: block;
+        }
+     }
+
+     .CTA{
+        margin-top: 30px;
+        text-align: center;
+        button, input[type="submit"] {
+            font-size: 12px;
+            text-transform: uppercase;
+            padding: 10px 30px;
+            background: $secondary-color;
+            color: $white;
+            border-radius: 8px;
+            margin-right: 0;
+            border: none;
+            cursor: pointer;
+            transition: background 0.3s;
+
+            &:hover {
+                background: darken($secondary-color, 10%);
+            }
+        }
+     }
+}
+
+@mixin title{
+    h6{
+        font-size: 17px;
+        color: $primary-color;
+        margin-bottom: 15px;
+    }
+    h4{
+        font-size: 35px;
+        font-weight: $font-black;
+    }
+}

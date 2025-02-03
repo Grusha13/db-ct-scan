@@ -1,0 +1,522 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Diagno Buddy</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="icon" href="assets/images/favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@100..900&display=swap" rel="stylesheet">
+  <nosciprt><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@100..900&display=swap"></nosciprt>
+  <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" as="style"
+    onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  </noscript>
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#scrollspy" data-bs-offset="50" tabindex="0">
+    <header>
+        <nav class="navbar navbar-expand-lg" id="scrollspy">
+          <div class="container">
+            <a class="navbar-brand" href="#"><img src="assets/images/logo.png" alt=""></a>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+              <ul class="navbar-nav mx-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#about">About CT Scan</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#benefit">Benefits of CT Scan</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#diagnosis">Diagnosis</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#faq">FAQ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contact</a>
+                </li>
+              </ul>
+            </div>
+            <div class="support d-md-flex ms-md-auto me-md-2 ms-lg-0 me-lg-0 align-items-center">
+              <div class="icon"><i class="fa-solid fa-headset"></i></div>
+              <div class="number">
+                  <p>Book an Appointment</p>
+                  <a href="tel:+918454909400">+91-84549 09400</a>
+              </div>
+            </div>
+            <button class="navbar-toggler d-lg-none ms-md-2 ms-auto" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon">
+              <i class="fa-solid fa-bars" aria-hidden="true"></i>
+            </span>
+          </button>
+          </div>
+        </nav>
+      </header>
+      <div class="form-wrapper" id="toggle-form-container">
+        <button id="toggle-button">Contact Us</button>
+        <form class="form" method="post" action="submit_form.php" id="contact_form_1">
+          <input type="hidden" name="form_id" value="form1">
+          <div class="form-group my-2">
+            <input type="text" name="username" id="name" class="name" placeholder="Full Name" required>
+            <span class="error"></span>
+          </div>
+          <div class="form-group">
+            <input type="email" name="emailAdress" id="email" class="email" placeholder="Email" required>
+            <span class="error"></span>
+          </div>
+          <div class="form-group my-2">
+            <input type="text" name="phone" id="phone" class="phone" placeholder="Phone" required>
+            <span class="error"></span>
+          </div>
+          <div class="form-group my-2">
+            <select name="location" id="location" class="location" required>
+                <option value="Select Location" default>Select Location</option>
+                <option value="New Panvel">New Panvel</option>
+                <option  value="Old Panvel">Old Panvel</option>
+                <option value="Karanjade">Karanjade</option>
+                <option  value="Khanda Colony">Khanda Colony</option>
+                <option  value="Kamothe">Kamothe</option>
+                <option  value="Kalamboli">Kalamboli</option>
+                <option value="Taloja">Taloja</option>
+                <option value="Kharghar"> Kharghar</option>
+                <option value="Belapur">Belapur</option>
+                <option value="Seawoods">Seawoods</option>
+                <option value="Nerul">Nerul</option>
+                <option value="Juinagar">Juinagar</option>
+                <option value="Sandpada">Sandpada</option>
+                <option value="Vashi">Vashi</option>
+                <option value="Turbe">Turbe</option>
+                <option value="Koparkhairne">Koparkhairne</option>
+                <option value="Ghansoli">Ghansoli</option>
+                <option value="Rabale">Rabale</option>
+                <option value="Airoli">Airoli</option>
+              </select>
+            <span class="error"></span>
+          </div>
+          <div class="form-group my-2">
+            <textarea name="enquiry" placeholder="Write your message here..." id="" cols="40" rows="3"></textarea>
+          </div>
+          <div class="CTA">
+            <button  class="g-recaptcha"  type="submit"  value=Submit name=submitForm>Submit</button>
+          </div>
+        </form>
+      </div>
+      <main>
+        <section class="banner">
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="hero-title">
+                            <span>Simira Diagnostics CT Scan</span>
+                            <h6>Precision You Can Trust: Expert CT Scan Solutions</h6>
+                            <div class="rate  align-items-center">
+                                <p class="mb-0">Starting <span class="ms-1">@ ₹1800</span></p>
+                                <h5 class="text-uppercase ms-4">Flat <span>30%</span> off</h5>
+                            </div>
+                            <p class="mb-5">Providing unparalleled clarity and precision for early diagnosis and effective treatment</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                      <div class="image-wrapper">
+                        <img src="assets/images/banner.webp" alt="" class="w-100">
+                      </div>
+                      <div class="form-wrapper mt-4">
+                        <form class="form" method="post" action="submit_form.php" id="contact_form_2">
+                          <input type="hidden" name="form_id" value="form2">
+                          <div class="form-group my-2">
+                            <input type="text" name="username" id="name" class="name" placeholder="Full Name" required>
+                            <span class="error"></span>
+                          </div>
+                          <div class="form-group">
+                            <input type="email" name="emailAdress" id="email" class="email" placeholder="Email" required>
+                            <span class="error"></span>
+                          </div>
+                          <div class="form-group my-2">
+                            <input type="text" name="phone" id="phone" class="phone" placeholder="Phone" required>
+                            <span class="error"></span>
+                          </div>
+                          <div class="form-group my-2">
+                            <select name="location" id="location" class="location" required>
+                                <option value="Select Location" default>Select Location</option>
+                                <option value="New Panvel">New Panvel</option>
+                                <option  value="Old Panvel">Old Panvel</option>
+                                <option value="Karanjade">Karanjade</option>
+                                <option  value="Khanda Colony">Khanda Colony</option>
+                                <option  value="Kamothe">Kamothe</option>
+                                <option  value="Kalamboli">Kalamboli</option>
+                                <option value="Taloja">Taloja</option>
+                                <option value="Kharghar"> Kharghar</option>
+                                <option value="Belapur">Belapur</option>
+                                <option value="Seawoods">Seawoods</option>
+                                <option value="Nerul">Nerul</option>
+                                <option value="Juinagar">Juinagar</option>
+                                <option value="Sandpada">Sandpada</option>
+                                <option value="Vashi">Vashi</option>
+                                <option value="Turbe">Turbe</option>
+                                <option value="Koparkhairne">Koparkhairne</option>
+                                <option value="Ghansoli">Ghansoli</option>
+                                <option value="Rabale">Rabale</option>
+                                <option value="Airoli">Airoli</option>
+                              </select>
+                            <span class="error"></span>
+                          </div>
+                          <div class="form-group my-2">
+                            <textarea name="enquiry" placeholder="Write your message here..." id="" cols="40" rows="3"></textarea>
+                          </div>
+                          <div class="CTA">
+                            <button  class="g-recaptcha"  type="submit"  value=Submit name=submitForm>Submit</button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="benefits" id="benefit">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-lg-3 col-md-6">
+                  <div class="content-wrapper my-2">
+                    <div class="image-wrapper">
+                      <img src="assets/images/fast.webp" alt="" loading="lazy">
+                    </div>
+                    <div>
+                      <h6>Fast and Efficient</h6>
+                      <p>CT scans are quick, often providing results in minutes, which is especially important in emergency situations</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="content-wrapper my-2">
+                      <div class="image-wrapper">
+                        <img src="assets/images/non-invasive.webp" alt="" loading="lazy">
+                      </div>
+                      <div>
+                        <h6>Non-invasive</h6>
+                        <p>Unlike surgical procedures, CT scans allow doctors to look inside the body without the need for incisions</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6">
+                    <div class="content-wrapper my-2">
+                      <div class="image-wrapper">
+                        <img src="assets/images/imaging.webp" alt="" loading="lazy">
+                      </div>
+                      <div>
+                        <h6>Detailed Imaging</h6>
+                        <p>The high-quality images produced by a CT scan can provide critical information that is essential for accurate diagnosis and treatment planning</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6">
+                    <div class="content-wrapper my-2">
+                      <div class="image-wrapper">
+                        <img src="assets/images/versatile.webp" alt="" loading="lazy">
+                      </div>
+                      <div>
+                        <h6>Versatile</h6>
+                        <p>CT scans can be used to examine many parts of the body, from the brain to the abdomen, making them a versatile diagnostic tool</p>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+        </section>
+        <section class="detail" id="about">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="title">
+                            <h6>CT Scan Overview</h6>
+                            <h4> What Is A CT Scan?</h4>
+                        </div>
+                        <p>A CT scan is a non-invasive imaging procedure that combines X-ray technology with computer processing to create detailed, cross-sectional images of the body. Unlike regular X-rays, which only provide a single image, CT scans offer a 360-degree view of the inside of the body. This allows doctors to see structures like organs, blood vessels, bones, and soft tissues in great detail.</p>
+                        <a href="tel:+918454909400" class="call-btn"><i class="fa-phone fa-solid me-3"></i>+91-84549 09400</a>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="image-wrapper">
+                            <img src="assets/images/banner-2.webp" alt="ct-scan image" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="detail-questions">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="card">
+                            <div class="tag">How Does a CT Scan Work?</div>
+                            <p class="detail-content">The process of a CT scan involves the use of a special machine that sends a series of X-ray beams through the body from multiple angles. These beams are detected by sensors and then processed by a computer to create detailed images. These images, often referred to as “slices,” can be viewed in various planes (horizontal, vertical, or even 3D) to help doctors get a comprehensive view of the body.</p>
+                            <a class="hero-btn" href="#faq">Book Appointment</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card">
+                            <div class="tag">Are CT Scans Safe?</div>
+                            <p class="detail-content">While CT scans involve the use of X-rays, which do involve a small amount of radiation, the amount used in a CT scan is generally considered safe. Modern CT scanners use low doses of radiation, and the potential benefits of the scan typically outweigh the risks. However, if you're concerned about the radiation exposure, it's important to discuss these concerns with your doctor.</p>
+                            <a class="hero-btn" href="#faq">Book Appointment</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card">
+                            <div class="tag">What to Expect During a CT Scan?</div>
+                            <p class="detail-content">Preparing for a CT scan is relatively simple. In some cases, a contrast dye may be injected into your bloodstream or ingested to help highlight certain areas of the body. During the scan, you'll lie on a table that moves through the CT scanner. The procedure is painless and typically takes just a few minutes. You may be asked to hold your breath briefly while the scan is being performed to ensure clear images.</p>
+                            <a class="hero-btn" href="#faq">Book Appointment</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="disease-section"  id="diagnosis">
+            <div class="container">
+                <div class="row align-items-end">
+                    <div class="title">
+                        <h6>CT Scan Imaging</h6>
+                        <h4>What Conditions Can a CT Scan Detect?</h4>
+                    </div>
+                    <p class="title-para">CT scans are invaluable in diagnosing and managing a wide range of medical conditions. Some of the most common conditions detected using a CT scan include:</p>
+                    <div class="disease-list-wrapper d-flex flex-wrap">
+                        <div class="col-lg-4 col-12">
+                            <div class="disease-list mx-2">
+                                <div class="icon-wrapper me-4">
+                                    <img src="assets/images/cancer.png" alt="">
+                                </div>
+                                <div class="disease-content">
+                                    <h6>Cancer</h6>
+                                    <p>CT scans are used to identify tumors, assess their size, and determine if they have spread to other parts of the body.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-12">
+                            <div class="disease-list mx-2">
+                                <div class="icon-wrapper me-4">
+                                    <img src="assets/images/injuries.png" alt="">
+                                </div>
+                                <div class="disease-content">
+                                    <h6>Injuries and Trauma</h6>
+                                    <p>CT scans can quickly detect fractures, internal bleeding, and damage to organs, making them essential for trauma cases.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-12">
+                            <div class="disease-list mx-2">
+                                <div class="icon-wrapper me-4">
+                                    <img src="assets/images/cardiac.png" alt="">
+                                </div>
+                                <div class="disease-content">
+                                    <h6>Cardiovascular Diseases</h6>
+                                    <p>A CT angiogram can help doctors visualize blood vessels, identify blockages, or assess the heart's health.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-12">
+                            <div class="disease-list mx-2">
+                                <div class="icon-wrapper me-4">
+                                    <img src="assets/images/infections.png" alt="">
+                                </div>
+                                <div class="disease-content">
+                                    <h6>Infections</h6>
+                                    <p>Doctors can identify infections in areas like the lungs, abdomen, or sinuses.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-12">
+                            <div class="disease-list mx-2">
+                                <div class="icon-wrapper me-4">
+                                    <img src="assets/images/brain-disorder.png" alt="">
+                                </div>
+                                <div class="disease-content">
+                                    <h6>Brain Disorders</h6>
+                                    <p>CT scans are often used to detect brain injuries, strokes, and neurological disorders.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-12">
+                            <div class="disease-list mx-2">
+                                <div class="icon-wrapper me-4">
+                                    <img src="assets/images/abdominal.png" alt="">
+                                </div>
+                                <div class="disease-content">
+                                    <h6>Abdominal and Pelvic Issues</h6>
+                                    <p>Conditions like appendicitis, kidney stones, and gastrointestinal issues can be diagnosed with a CT scan.</p>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </section>
+        <section class="faq" id="faq">
+            <div class="container">
+                <div class="row justify-content-center align-items-center">
+                    <div class="title text-center"> 
+                        <h4>FAQ's</h4>
+                    </div>
+                    <div class="col-lg-8">
+                      <div class="accordion" id="gutaccordion">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">What is a CT Scan?</button>
+                          </h2>
+                          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#gutaccordion">
+                            <div class="accordion-body">
+                              <p>A <strong>CT scan</strong> is a non-invasive imaging procedure that combines X-ray technology with computer processing to create detailed, cross-sectional images of the body. Unlike regular X-rays, which only provide a single image, CT scans offer a 360-degree view of the inside of the body. This allows doctors to see structures like organs, blood vessels, bones, and soft tissues in great detail.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header mt-2" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">How Does a CT Scan Work?</button>
+                          </h2>
+                          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#gutaccordion">
+                            <div class="accordion-body">
+                              <p>The process of a CT scan involves the use of a special machine that sends a series of X-ray beams through the body from multiple angles. These beams are detected by sensors and then processed by a computer to create detailed images. These images, often referred to as “slices,” can be viewed in various planes (horizontal, vertical, or even 3D) to help doctors get a comprehensive view of the body.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header mt-2" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Are CT Scans Safe?</button>
+                          </h2>
+                          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#gutaccordion">
+                            <div class="accordion-body">
+                              <p>While CT scans involve the use of X-rays, which do involve a small amount of radiation, the amount used in a CT scan is generally considered safe. Modern CT scanners use low doses of radiation, and the potential benefits of the scan typically outweigh the risks. However, if you're concerned about the radiation exposure, it's important to discuss these concerns with your doctor, who can evaluate the necessity of the scan based on your specific medical needs.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header mt-2" id="headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">What Should You Expect During a CT Scan?</button>
+                          </h2>
+                          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                            data-bs-parent="#gutaccordion">
+                            <div class="accordion-body">
+                              <p>Preparing for a CT scan is relatively simple. Depending on the type of scan and the area being examined, you may be asked to change into a hospital gown and remove any metal objects, such as jewelry. In some cases, a contrast dye may be injected into your bloodstream or ingested to help highlight certain areas of the body.</p>
+                              <p>During the scan, you'll lie on a table that moves through the CT scanner. The procedure is painless and typically takes just a few minutes. You may be asked to hold your breath briefly while the scan is being performed to ensure clear images.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header mt-2" id="headingFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">Post-CT Scan: What Happens Next?</button>
+                          </h2>
+                          <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                            data-bs-parent="#gutaccordion">
+                            <div class="accordion-body">
+                              <p>After the scan, you can generally resume your normal activities immediately. If you were given contrast dye, you might be advised to drink extra fluids to help flush it out of your system. Your doctor will review the results and discuss any findings with you, guiding you on the next steps in treatment if needed</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="form-wrapper">
+                        <form class="form" method="post" action="submit_form.php" id="contact_form_3">
+                          <input type="hidden" name="form_id" value="form3">
+                            <div class="form-group my-2">
+                              <input type="text" name="username" id="name" class="name" placeholder="Full Name" required>
+                              <span class="error"></span>
+                            </div>
+                            <div class="form-group">
+                              <input type="email" name="emailAdress" id="email" class="email" placeholder="Email" required>
+                              <span class="error"></span>
+                            </div>
+                            <div class="form-group my-2">
+                              <input type="text" name="phone" id="phone" class="phone" placeholder="Phone" required>
+                              <span class="error"></span>
+                            </div>
+                            <div class="form-group my-2">
+                              <select name="location" id="location" class="location" required>
+                                  <option value="Select Location" default>Select Location</option>
+                                  <option value="New Panvel">New Panvel</option>
+                                  <option  value="Old Panvel">Old Panvel</option>
+                                  <option value="Karanjade">Karanjade</option>
+                                  <option  value="Khanda Colony">Khanda Colony</option>
+                                  <option  value="Kamothe">Kamothe</option>
+                                  <option  value="Kalamboli">Kalamboli</option>
+                                  <option value="Taloja">Taloja</option>
+                                  <option value="Kharghar"> Kharghar</option>
+                                  <option value="Belapur">Belapur</option>
+                                  <option value="Seawoods">Seawoods</option>
+                                  <option value="Nerul">Nerul</option>
+                                  <option value="Juinagar">Juinagar</option>
+                                  <option value="Sandpada">Sandpada</option>
+                                  <option value="Vashi">Vashi</option>
+                                  <option value="Turbe">Turbe</option>
+                                  <option value="Koparkhairne">Koparkhairne</option>
+                                  <option value="Ghansoli">Ghansoli</option>
+                                  <option value="Rabale">Rabale</option>
+                                  <option value="Airoli">Airoli</option>
+                                </select>
+                              <span class="error"></span>
+                            </div>
+                            <div class="form-group my-2">
+                              <textarea name="enquiry" placeholder="Write your message here..." id="" cols="40" rows="3"></textarea>
+                            </div>
+                            <div class="CTA">
+                              <button  class="g-recaptcha"  type="submit"  value=Submit name=submitForm>Submit</button>
+                            </div>
+                          </form>
+                        </div>
+                  </div>
+                </div>
+            </div>
+        </section>
+      </main>
+      <footer id="contact">
+        <div class="copyright">
+          <div class="container">
+            <div class="row justify-content-center align-items-center">
+              <div class="col-lg-4">
+                  <h6>Talk to our Health Advisor</h6>
+              </div>
+              <div class="col-lg-4">
+                <div class="form-wrapper">
+                  <form class="form d-sm-flex justify-content-center align-items-center"  action="submit_form.php" method="post" id="contact_form_3">
+                    <input type="hidden" name="form_id" value="form3">
+                    <div class="form-group my-2">
+                      <input type="text" name="phone" id="phone" class="phone" placeholder="Enter your mobile number" required>
+                      <span class="error"></span>
+                    </div>
+                    <div class="CTA">
+                      <input type="submit" value="Get a Free Call" id="submit">
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="number d-flex justify-content-end">
+                  <a href="tel:+918454909400" class="contact-number"><i class="fa-solid fa-phone me-2"></i>+91-84549 09400</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/588e7d93d2.js" crossorigin="anonymous" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/custom.js"></script>
+</body>
+</html>
