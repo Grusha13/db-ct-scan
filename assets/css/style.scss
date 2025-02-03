@@ -89,6 +89,7 @@ header{
             .navbar-brand{
                 img{
                     height: 90px;
+                    width: 170px;
                 }
             }
         }
@@ -388,12 +389,16 @@ header{
     @media screen and (max-width: 768px) {
         .card{
             margin: 15px auto;
+            width: 100%;
+
+            .detail-content{
+                height: auto;
+            }
         }
     }
 
     @media screen and (max-width: 400px) {
         .card{
-            width: 265px;
             .detail-content{
                 height: auto;
             }
@@ -546,6 +551,15 @@ header{
         position: relative;
         margin: 0;
     }
+
+    @media screen and (max-width: 768px) {
+        .accordion{
+            height: auto;
+            .accordion-item{
+                margin: 20px 0;
+            }
+        }
+    }
 }
 
 footer{
@@ -612,6 +626,9 @@ footer{
             .form-wrapper{
                 width: 60%;
                 margin: auto;
+            }
+            .number{
+                margin: 10px 20px 0;
             }
         }
     }

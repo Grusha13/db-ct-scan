@@ -117,4 +117,10 @@ $yellow: #FFDE00;
         font-size: 35px;
         font-weight: $font-black;
     }
+
+    @media screen  and (max-width: 768px){
+        h4{
+            font-size: 28px;
+        }
+    }
 }
